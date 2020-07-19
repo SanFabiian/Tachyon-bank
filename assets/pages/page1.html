@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Tachyon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header class="container" row>
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="../../index.html"><img src="../icons/brand.svg" alt="Tachyon" width="150"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#"><span class="text_destacado">Envía dinero</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Recibe dinero</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#footer">Ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#footer">Contáctanos</a>
+                    </li>
+                    <li>
+                      <button class="btn btn-primary" type="submit" id="login" data-toggle="modal" data-target="#staticBackdrop">Cerrar sesión</button>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="container">
+            <div class="d-flex align-items-center row">
+                <div class="col-ms-4 ml-4">
+                    <img src="../images/img3.png" alt="Foto de usuario">
+                </div>
+                <div class="datos_usuario col-ms-6 ml-4">
+                    <h2>Nombre de usuario</h2>
+                    <h3>200.000</h3>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-3 col-md-3">
+                    <button class="btn_arrow">
+                        <i class="fas fa-sign-out-alt" style="transform: rotate(-90deg);"></i>
+                        Recarga
+                    </button>
+                </div>
+                <div class="col-3 col-md-3">
+                    <button class="btn_arrow">
+                        <i class="fas fa-sign-out-alt" style="transform: rotate(90deg);"></i>
+                        Retira
+                    </button>
+                </div>
+                <div class="col-3 col-md-3">
+                    <button class="btn_arrow">
+                        <i class="fas fa-sign-in-alt""></i>
+                        Envia
+                    </button>
+                </div>
+                <div class="col-3 col-md-3">
+                    <button class="btn_arrow">
+                        <i class="fas fa-sign-in-alt" style="transform: rotate(180deg);"></i>
+                        Recibe
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="mb-4 mt-4 container d-flex justify-content-center">
+            <form class="form_envio col-md-7">
+                  <div class="form-group col-12">
+                    <input type="text" class="form-control" placeholder="¿A quién en envías?" id="validationServer01" value="" required>
+                  </div>
+                  <div class="form-group col-12">
+                    <input type="number" class="form-control" placeholder="¿Cuánto envías?" id="validationServer02" value="" step="1000" required>
+                  </div>
+                  <div class="form-group col-12">
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="Envía un mensage"></textarea>
+                  </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" required>
+                    <label class="form-check-label">
+                      Guarda en favoritos
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group col-md-7">
+                    <button class="btn-block btn-primary" type="submit">Envíar</button>
+                </div>
+              </form>
+        </section>
+    </main>
+
+
+    <footer class="footer text-center" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md">
+                    <h3>Contáctanos</h3>
+                    <p>(1) 2 54 88 38</p>
+                    <p>+57 305 6 98 68 12</p>
+                </div>
+                <div class="col-sm-12 col-md text-left">
+                    <h3>Síguenos en:</h3>
+                    <div class="social_media">
+                        <a href="#"><img src="../icons/social0.svg"></a>
+                        <a href="#"><img src="../icons/social1.svg"></a>
+                        <a href="#"><img src="../icons/social2.svg"></a>
+                        <a href="#"><img src="../icons/social3.svg"></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md">
+                    <p><a href="#">Condiciones de uso</a></p>
+                    <p><a href="#">Seguridad</a></p>
+                    <p><a href="#">Términos y condiciones</a></p>
+                </div>
+                <div class="copy col-sm-12 col-lg-12">
+                    <h4>Created by Fabian Sandobal</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bc6df4c6ba.js" crossorigin="anonymous"></script>
+</body>
+</html>
